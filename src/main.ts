@@ -8,11 +8,11 @@ import { APILogger } from './services/logger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // app.enableCors({
-  //   allowedHeaders: '*',
-  //   origin: '*',
-  //   credentials: true,
-  // });
+  app.enableCors({
+    allowedHeaders: '*',
+    origin: '*',
+    credentials: true,
+  });
 
   // Configuracion Swagger
   const config = new DocumentBuilder()

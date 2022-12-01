@@ -14,6 +14,8 @@ async function bootstrap() {
     credentials: true,
   });
 
+  console.log('port', port);
+
   // Configuracion Swagger
   const config = new DocumentBuilder()
     .setTitle('Api Canje de premios')
